@@ -54,18 +54,17 @@ body {
     */
 }
 
-/**Sinifica que haremos una animacion*/
+/** Sinifica que haremos una animacion */
 @keyframes girar {
-    /*Cuando comienza*/
+    /* Cuando comienza */
     from {
-        /*Esta propiedad nos permite
+        /* Esta propiedad nos permite
         que no afecte a los otros elementos 
-        del html
-        */
+        del html */
         transform: rotate(0deg);
     }   
 
-    /*Cuando termina*/
+    /* Cuando termina */
     to {
         transform: rotate(360deg);
     }
