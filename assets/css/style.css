@@ -43,7 +43,36 @@ body {
     height: 60px; 
     margin-top: -9px;
     margin-right: -10px;
+    animation: girar infinite 30s linear;
+
+    /**
+    animations: nombreDeAnimacion (@KeyFrame)
+    infitine(Que nunca para la animacion) 
+    20s(Tiempo de la animacion 
+    linear(Siempre tendra la misma velocidad)
+    );
+    */
 }
+
+/**Sinifica que haremos una animacion*/
+@keyframes girar {
+    /*Cuando comienza*/
+    from {
+        /*Esta propiedad nos permite
+        que no afecte a los otros elementos 
+        del html
+        */
+        transform: rotate(0deg);
+    }   
+
+    /*Cuando termina*/
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 
 #brand {
     display: block;
