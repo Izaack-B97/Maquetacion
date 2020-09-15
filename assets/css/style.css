@@ -159,3 +159,13 @@ body {
     color: white;
     transition: 300ms all;
 }
+
+#slider.slider-small {
+    height: 150px;
+}
+
+#slider.slider-small h1 {
+    margin-top: 0,2px;
+    padding: 0px;
+    padding-top: 53px;
+}
