@@ -6,7 +6,23 @@
     <title>Maquetaci&oacute;n</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
+
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            var template = document.getElementById('article-template');
+            var articles = document.getElementById('articles');
+            
+            for (let i = 1; i <= 5; i++) {
+                var clonar = template.cloneNode(true);
+                console.log(clonar.getElementsByTagName('h2')[0]);
+                var h2 = clonar.getElementsByTagName('h2')[0];
+                h2.innerHTML = h2.textContent + ' ' + i;
+                articles.appendChild(clonar);
+            }
+        });
+
+    </script>
+
 </head>
 <body>
     <header id="header">
@@ -53,6 +69,19 @@
         <section id="content">
             <h2>&Uacute;ltimos art&iacute;culos</h2>
             <!-- Listado de articulos -->
+            <div id="articles">
+                <article class="article-item" id="article-template">
+                    <div class="img-wrap">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Cuesta_del_obispo_01.jpg" alt="Paisaje">
+    
+                        <h2>Articulo de prueba</h2>
+                        <span class="date">Hace 5 minutos</span>
+                        <a href="#">Leer mas</a>
+                    </div>
+                </article>
+                <!-- Resto de los articulos de manera dinamica -->
+            </div>
+            
         </section>
         <aside id="sidebar">
             <div id="nav-blog" class="sidebar-item">
