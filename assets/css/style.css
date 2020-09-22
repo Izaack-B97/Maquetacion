@@ -70,9 +70,6 @@ body {
     }
 }
 
-
-
-
 #brand {
     display: block;
     margin: 0;
@@ -307,4 +304,27 @@ input[type="text"]:focus {
     font-size: 38px;
     border-bottom: 2px solid #eee;
     padding: 10px;
+}
+
+.article-detail .img-wrap{
+    float: none;
+    width: 100%;
+    height: 400px;
+}
+
+.article-detail img{
+    width: 100%;
+    height: auto;
+}
+
+.article-detail .subheader {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: -10px;
+    border: none;
+}
+
+.article-detail .date {
+    margin-top: -5px;
+    padding-bottom: 5px;
 }
