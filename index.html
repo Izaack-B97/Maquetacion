@@ -14,6 +14,7 @@
             
             for (let i = 1; i <= 5; i++) {
                 var clonar = template.cloneNode(true);
+                clonar.removeAttribute('id');
                 console.log(clonar.getElementsByTagName('h2')[0]);
                 var h2 = clonar.getElementsByTagName('h2')[0];
                 h2.innerHTML = h2.textContent + ' ' + i;
@@ -67,17 +68,17 @@
 
     <div class="center">
         <section id="content">
-            <h2>&Uacute;ltimos art&iacute;culos</h2>
+            <h2 class="subheader">&Uacute;ltimos art&iacute;culos</h2>
             <!-- Listado de articulos -->
             <div id="articles">
                 <article class="article-item" id="article-template">
                     <div class="img-wrap">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Cuesta_del_obispo_01.jpg" alt="Paisaje">
-    
-                        <h2>Articulo de prueba</h2>
-                        <span class="date">Hace 5 minutos</span>
-                        <a href="#">Leer mas</a>
                     </div>
+                    <h2>Articulo de prueba</h2>
+                    <span class="date">Hace 5 minutos</span>
+                    <a href="#">Leer m&aacute;s</a>
+                    <div class="clearfix"></div>
                 </article>
                 <!-- Resto de los articulos de manera dinamica -->
             </div>
