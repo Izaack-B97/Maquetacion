@@ -27,7 +27,7 @@
                         <a href="/blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Formulario</a>
+                        <a href="/formulario.html">Formulario</a>
                     </li>
                     <li>
                         <a href="#">P&aacute;gina 1</a>
@@ -47,10 +47,10 @@
     <div class="center">
         <section id="content">
             <h1 class="subheader">Fomulario</h1>
-            <form action="">
+            <form action="" class="mid-form">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre">
+                    <input type="text" name="nombre" autofocus>
                 </div>
                 <div class="form-group">
                     <label for="apellidos">Apellidos</label>
@@ -58,13 +58,14 @@
                 </div>
                 <div class="form-group">
                     <label for="biografia">Biograf&iacute;a</label>
-                    <textarea name="biografia" rows="3"></textarea>
+                    <textarea name="biografia"></textarea>
                 </div>
-                <div class="form-group">
-                    <input type="radio" name="genero" value="M"/>Masculino 
+                <div class="form-group radio-buttons">
+                    <input type="radio" name="genero" value="M" checked/>Masculino 
                     <input type="radio" name="genero" value="F"/>Femenino 
                 </div>  
-                <input type="submit" value="Enviar" class="btn btn-success">
+                <div class="clearfix"></div>
+                <input type="submit" id="btnEnviar" value="Enviar" class="btn btn-success">
             </form>
         </section>
         <aside id="sidebar">
@@ -86,7 +87,7 @@
     </div>
 
     <!-- Pie de pagina -->
-    <footer id="footer">
+    <footer id="footer" style="position: fixed; bottom: 0px;">
         <div class="center">
             <p>&copy; Master en frameworks para Javascript por izaack-b97.github.io</p>
         </div>
